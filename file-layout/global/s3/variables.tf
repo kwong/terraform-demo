@@ -4,6 +4,6 @@ variable "bucket_name" {
 }
 
 variable "table_name" {
-    description "name of dynamoDB table"
+    description = "name of dynamoDB table"
     type = string
 }
