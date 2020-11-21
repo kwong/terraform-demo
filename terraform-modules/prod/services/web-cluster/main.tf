@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "web-cluster" {
-    source = "github.com/kwong/terraform-demo//terraform-modules/modules/services/web-cluster"
+    source = "github.com/kwong/terraform-demo//terraform-modules/modules/services/web-cluster?ref=v0.01"
 
     cluster_name = "webcluster-stage"
     db_remote_state_bucket = "terraform-state-bucket-wkngw1009"
